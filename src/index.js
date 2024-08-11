@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Amplify from 'aws-amplify';
+import awsExports from './aws-exports'; // Make sure this path is correct
+
+Amplify.configure(awsExports); // Configure Amplify
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
